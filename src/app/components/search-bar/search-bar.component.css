@@ -1,0 +1,32 @@
+.search__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: transparent;
+}
+
+.psn-input {
+  width: 80%;
+  max-width: 600px;
+  padding: 16px 20px;
+  border-radius: 25px;
+  border: 1px solid #333;
+  background-color: #2b2b2b;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de foco inspirado no brilho do console */
+.psn-input:focus {
+  border-color: #0070d1; /* Azul PlayStation */
+  box-shadow: 0 0 10px rgba(0, 112, 209, 0.5);
+  background-color: #3d3d3d;
+}
+
+.psn-input::placeholder {
+  color: #888;
+}

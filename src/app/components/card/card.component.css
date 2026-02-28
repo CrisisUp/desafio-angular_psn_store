@@ -8,6 +8,13 @@
 	display: flex;
 	overflow: hidden;
 	margin-top: 10px;
+	transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card__container:hover {
+  transform: scale(1.05); /* Aumenta 5% o tamanho */
+  filter: brightness(1.1); /* Dá um leve brilho extra */
 }
 
 .card__img{

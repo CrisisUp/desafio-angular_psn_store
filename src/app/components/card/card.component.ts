@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Game } from 'src/app/models/game.model'; // Importando seu novo contrato
 
 @Component({
   selector: 'app-card',
@@ -7,18 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-	@Input()
-	gameCover:string = ""
-	@Input()
-	gameLabel:string=""
-	@Input()
-	gameType:string ="XPTO | PS4"
-	@Input()
-	gamePrice:string = "R$ 399,90"
+  // Agora o componente recebe o objeto Game completo
+  // O '!' indica que o Angular garantirá que esse valor chegue via Input
+  @Input()
+  gameData!: Game;
 
   constructor() { }
 
   ngOnInit(): void {
+    // Você pode fazer logs aqui para validar se o objeto chegou corretamente
+    // console.log(this.gameData);
   }
 
 }

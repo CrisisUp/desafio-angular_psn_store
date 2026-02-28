@@ -1,27 +1,52 @@
-# Store
+# 🎮 PlayStation Store Clone - Angular Pro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Este projeto é uma evolução do desafio da DIO, focado em implementar uma arquitetura escalável e moderna utilizando Angular. Além da interface visual, o projeto explora conceitos de DevOps e Arquitetura de Software em um ambiente de hardware de última geração.
 
-## Development server
+## 🚀 Diferenciais Técnicos (Nível Intermediário)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Diferente da versão básica, este clone implementa:
 
-## Code scaffolding
+* **Roteamento Dinâmico:** Navegação entre a vitrine de jogos e páginas de detalhes específicas (/details/:id) sem recarregamento de página.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Service Pattern:** Centralização da lógica de dados em um GameService, facilitando a manutenção e futura integração com APIs.
 
-## Build
+* **Data Modeling:** Uso de Interfaces TypeScript para garantir a integridade dos dados em toda a aplicação.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* **Filtro em Tempo Real:** Sistema de busca reativo que filtra a vitrine de jogos instantaneamente através de Input Binding.
 
-## Running unit tests
+## 💻 Ambiente de Desenvolvimento & Compatibilidade
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Um dos grandes desafios superados neste projeto foi a homologação em um ambiente de ponta:
 
-## Running end-to-end tests
+| Recurso | Especificação |
+| :--- | :--- |
+| **Hardware** | Apple Mac mini (Chip M4) com 16GB RAM |
+| **OS** | macOS Tahoe 26.2 |
+| **Runtime** | Node.js v25.x (Current) |
+| **Package Manager** | npm v10.x |
+| **Framework** | Angular v13+ |
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**`Nota Técnica`:** O projeto foi testado para garantir que o compilador do Angular e o servidor de desenvolvimento (HMR) operem com latência zero na arquitetura ARM64 do chip M4, mesmo utilizando a versão experimental do Node v25.
 
-## Further help
+## 🏗️ Estrutura do Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```Plaintext
+src/app/
+├── components/            # Componentes reutilizáveis (Card, Search, Menu)
+├── models/                # Interfaces e Contratos de Dados
+├── pages/                 # Home e Detalhes (Roteamento)
+├── services/              # Lógica de negócio e busca de dados
+└── app-routing.module.ts  # Configuração das rotas
+```
+
+## 🛠️ Como rodar o projeto
+
+### 1. Certifique-se de ter o Node v25 instalado
+
+### 2. Clone o repositório
+
+### 3. Instale as dependências: `npm install`
+
+### 4. Inicie o servidor: `npm start` ou `ng serve`
+
+### 5. Acesse <http://localhost:4200>

@@ -1,10 +1,23 @@
-.home__container{
-	width: 90%;
-	margin: auto;
-	padding-top: 50px;
-	display: flex;
+.home__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px; /* Adiciona respiro nas laterais e topo */
+}
 
-	justify-content: space-around;
-	align-items: baseline;
-	flex-wrap: wrap;
+.no-results {
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px;
+  color: #ccc;
+  font-size: 1.2rem;
+  grid-column: 1 / -1; /* Se você estiver usando Grid, isso faz a mensagem ocupar a largura toda */
+}
+
+.no-results p {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px dashed #444;
 }
