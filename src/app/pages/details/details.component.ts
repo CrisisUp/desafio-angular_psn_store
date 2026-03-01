@@ -4,9 +4,10 @@ import { GameService } from 'src/app/services/game.service';
 import { Game } from 'src/app/models/game.model';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+    selector: 'app-details',
+    templateUrl: './details.component.html',
+    styleUrls: ['./details.component.css'],
+    standalone: false
 })
 export class DetailsComponent implements OnInit {
   game: Game | undefined;

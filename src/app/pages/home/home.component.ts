@@ -3,9 +3,10 @@ import { Game } from 'src/app/models/game.model';
 import { GameService } from 'src/app/services/game.service'; // Importe o serviço
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   searchText: string = '';

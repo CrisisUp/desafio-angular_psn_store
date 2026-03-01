@@ -2,9 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Game } from 'src/app/models/game.model'; // Importando seu novo contrato
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+    selector: 'app-card',
+    templateUrl: './card.component.html',
+    styleUrls: ['./card.component.css'],
+    standalone: false
 })
 export class CardComponent implements OnInit {
 
