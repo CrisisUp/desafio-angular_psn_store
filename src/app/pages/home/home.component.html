@@ -1,5 +1,7 @@
 <app-search-bar (onSearch)="updateSearch($event)"></app-search-bar>
 
 <div class="home__container">
-	<app-card *ngFor="let item of filteredGames" [gameData]="item"> </app-card>
+  @for (item of filteredGames; track item) {
+    <app-card [gameData]="item"> </app-card>
+  }
 </div>

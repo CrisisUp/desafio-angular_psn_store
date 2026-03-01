@@ -1,27 +1,25 @@
-<div class="details__container" *ngIf="game; else notFound">
-	<div class="details__content">
-		<div class="details__left">
-			<img [src]="game.cover" [alt]="game.label" class="details__img">
-		</div>
+@if (game) {
+  <div class="details__container">
+    <div class="details__content">
+      <div class="details__left">
+        <img [src]="game.cover" [alt]="game.label" class="details__img">
+      </div>
+      <div class="details__right">
+        <span class="details__label">{{ game.label }}</span>
+        <h1 class="details__title">Experience the Adventure</h1>
+        <p class="details__type">{{ game.type }}</p>
+        <div class="details__buy-box">
+          <span class="details__price">{{ game.price }}</span>
+          <button class="details__button">ADICIONAR AO CARRINHO</button>
+        </div>
+        <a routerLink="/" class="details__back">← Voltar para a Loja</a>
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="details__error">
+    <h2>Jogo não encontrado!</h2>
+    <a routerLink="/">Voltar para a Home</a>
+  </div>
+}
 
-		<div class="details__right">
-			<span class="details__label">{{ game.label }}</span>
-			<h1 class="details__title">Experience the Adventure</h1>
-			<p class="details__type">{{ game.type }}</p>
-
-			<div class="details__buy-box">
-				<span class="details__price">{{ game.price }}</span>
-				<button class="details__button">ADICIONAR AO CARRINHO</button>
-			</div>
-
-			<a routerLink="/" class="details__back">← Voltar para a Loja</a>
-		</div>
-	</div>
-</div>
-
-<ng-template #notFound>
-	<div class="details__error">
-		<h2>Jogo não encontrado!</h2>
-		<a routerLink="/">Voltar para a Home</a>
-	</div>
-</ng-template>
