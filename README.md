@@ -24,7 +24,7 @@ Um dos grandes desafios superados neste projeto foi a homologação em um ambien
 | **OS** | macOS Tahoe 26.2 |
 | **Runtime** | Node.js v25.x (Current) |
 | **Package Manager** | npm v10.x |
-| **Framework** | Angular v13+ |
+| **Framework** | Angular v19+ |
 
 **`Nota Técnica`:** O projeto foi testado para garantir que o compilador do Angular e o servidor de desenvolvimento (HMR) operem com latência zero na arquitetura ARM64 do chip M4, mesmo utilizando a versão experimental do Node v25.
 
